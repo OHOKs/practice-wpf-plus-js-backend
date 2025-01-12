@@ -1,0 +1,40 @@
+﻿<Window x:Class="Teszt.RecordAdder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teszt"
+        mc:Ignorable="d"
+        Title="RecordAdder" Height="300" Width="500"
+        Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Kategória" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+        <Label Content="Tehermentesség" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+        <Label Content="Ár" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+        <Label Content="Leírás" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+        <Label Content="Kép URL" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+
+        <ComboBox x:Name="categoryDropdown" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+        <CheckBox x:Name="tehermentes" Content="Tehermentes" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+        <TextBox x:Name="Ar" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+        <TextBox x:Name="Leiras" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+        <TextBox x:Name="url" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+
+        <Button Content="Létrehozás" Grid.Row="5" HorizontalAlignment="Center" Margin="0,5,0,5" Width="117" Click="Button_Click_1" />
+        <Button Content="Bezárás" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" Margin="0,5,0,5" Width="122" Click="Button_Click" />
+    </Grid>
+</Window>
