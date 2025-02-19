@@ -1,0 +1,21 @@
+﻿<Window x:Class="GepjarmuvekGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GepjarmuvekGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <TextBox Name="Tulajdonos" Text="" TextWrapping="Wrap" Margin="216,67,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="184"/>
+        <TextBox Name="Telefonszam" Text="" TextWrapping="Wrap" Width="120" Margin="216,97,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox Name="Azonosito" Text="" TextWrapping="Wrap" Width="120" Margin="216,35,0,0" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" RenderTransformOrigin="0.469,0.599"/>
+        <Label Content="Azonosito :" HorizontalAlignment="Left" Margin="42,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tulajdonos :" Margin="42,66,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="74"/>
+        <Label Content="Telefonszam :" HorizontalAlignment="Left" Margin="42,97,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="Hirdetok" Margin="564,35,0,217" SelectionChanged="Hirdetok_SelectionChanged" HorizontalAlignment="Left" Width="202"/>
+        <Button Name="HirdetesekBetoltese" Content="Hirdetesek betoltese" HorizontalAlignment="Left" Margin="58,140,0,0" VerticalAlignment="Top" Width="186" Click="HirdetesekBetoltese_Click"/>
+        <Label Content="Hirdetesek szama:" HorizontalAlignment="Left" Margin="24,205,0,0" VerticalAlignment="Top"/>
+        <Label Name="HiretesekSzama" Content="" HorizontalAlignment="Left" Margin="152,0,0,0" VerticalAlignment="Center"/>
+    </Grid>
+</Window>
